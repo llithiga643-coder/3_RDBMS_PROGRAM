@@ -1,9 +1,8 @@
-CREATE TABLE Course(
-    CourseID INT PRIMARY KEY,
-    CourseName VARCHAR(30) NOT NULL,
-    FacultyID INT,
-    FOREIGN KEY(FacultyID)
-    REFERENCES Faculty(FacultyID)
-);
+Create Database lithu;
+Use lithu;
+alter table  students
+add Email varchar(20);
+alter table students
+add phonenumber numeric(10);
+SELECT*FROM students;
 
-DESC Course;
